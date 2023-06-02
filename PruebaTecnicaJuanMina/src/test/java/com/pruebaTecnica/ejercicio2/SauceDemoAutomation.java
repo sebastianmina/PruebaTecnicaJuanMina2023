@@ -113,7 +113,7 @@ public class SauceDemoAutomation {
 	}
 	
 	@Test
-	public void productsInCart() throws InterruptedException {
+	public void checkingCart() throws InterruptedException {
 		
 		Thread.sleep(2000);
 		logInWithStandardUser();
