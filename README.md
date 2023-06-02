@@ -1,10 +1,10 @@
 # PruebaTecnicaJuanMina2023
 
-Dentro de este repositorio Git se encuentran los 5 puntos de la prueba técnica. 
+## Dentro de este repositorio Git se encuentran los 5 puntos de la prueba técnica. 
 
 En la carpeta Punto1 Resultados se encuentran las imágenes de los resultados de la ejecución del código realizado
 
-## 1. Crear un algoritmo para: obtener los números enteros del string.
+1. Crear un algoritmo para: obtener los números enteros del string.
 2. Retornar la suma de estos.
 String myString=
 "asfsdalgkjerio435j342234234nh234o32rnowei23io4h324oi32423o4w.,345.,34534534ew f342rasfsdalgkjerio435j342234234nh234o32rnowei23io4h324oi32423o4w.,345.,3453453 4ewf342rasfsdalgkjerio435j342234234nh234o32rnowei23io4h324oi32423o4w.,345.,345 34534ewf342rasfsdalgkjerio435j342234234nh234o32rnowei23io4h324oi32423o4w.,345.
