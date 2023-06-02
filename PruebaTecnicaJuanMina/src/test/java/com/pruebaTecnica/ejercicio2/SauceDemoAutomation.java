@@ -18,7 +18,7 @@ public class SauceDemoAutomation {
 	private MainPageSelectProduct mainPage;
 	private RemoveProduct removeProduct;
 	private AddProducts addProduct;
-	private ProductInCart cartProduct;
+	private CheckCart cartProduct;
 	
 	@Before
 	/**
@@ -49,7 +49,7 @@ public class SauceDemoAutomation {
 		addProduct.setDriver(driver);
 		addProduct.getDriver().get(url);
 		
-		cartProduct = new ProductInCart();
+		cartProduct = new CheckCart();
 		cartProduct.setDriver(driver);
 		cartProduct.getDriver().get(url);
 			
