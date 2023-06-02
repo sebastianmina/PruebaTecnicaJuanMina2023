@@ -33,17 +33,26 @@ public class LoginPage {
 	
 	//Services
 	
-	public void userName(String userName) {
+	public void writeUserName(String userName) {
 		
 		userBox().sendKeys(userName);
 	}
 	
-	public void password(String password) {
+	public void writePassword(String password) {
 		
 		passwordBox().sendKeys(password);
 	}
 	
 	public void clickLogin() {
 		login().click();
+	}
+	
+	public void finalLogin(String userName, String password) throws InterruptedException {
+		
+		userBox().sendKeys(userName);
+		Thread.sleep(1000);
+		passwordBox().sendKeys(password);
+		Thread.sleep(1000);
+		clickLogin();
 	}
 }
