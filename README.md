@@ -1,4 +1,4 @@
-# PruebaTecnicaJuanMina2023
+# Prueba Técnica ExcelCredit - JuanMina 
 
 ## Dentro de este repositorio Git se encuentran los 5 puntos de la prueba técnica. 
 
