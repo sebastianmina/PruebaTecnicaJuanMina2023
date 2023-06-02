@@ -32,13 +32,22 @@ Nota:
 
 En la carpeta Punto3SQL se encuentran los SQL con los querys realizados, se adjunta imagen con la ejecución de los querys
 
-## Ejercicio 1: Consultar el supermercado que tenga más cantidad de productos con el tipo “CARNICOS” que han vendido hasta la fecha 31 de diciembre del 2013 retornando el nombre del supermercado, la cantidad, la descripción del tipo de supermercado y la fecha de venta.
+Ejercicio 1: Consultar el supermercado que tenga más cantidad de productos con el tipo “CARNICOS” que han vendido hasta la fecha 31 de diciembre del 2013 retornando el nombre del supermercado, la cantidad, la descripción del tipo de supermercado y la fecha de venta.
 
 ![](Punto3SQL/Ejercicio1Resultado.png)
 
-## Ejercicio 2: Seleccionar los clientes que compran en el SUPERMERCADO “Exito” cuya compra supera los $150.000 mil pesos e imprimir todos los datos del cliente más el nombre del supermercado y el valor de venta, y ordenarlos descendentemente.
+Ejercicio 2: Seleccionar los clientes que compran en el SUPERMERCADO “Exito” cuya compra supera los $150.000 mil pesos e imprimir todos los datos del cliente más el nombre del supermercado y el valor de venta, y ordenarlos descendentemente.
 
 ![](Punto3SQL/Ejercicio2Resultado.png)
 
 Los puntos 4 y 5 son documentos Word que están adjuntos en en Punto4PruebaTécnica y Punto5Teórico respectivamente.
 
+Adjunto también imágenes de cómo se encuentra el repositorio actualmente con los dos pull requests solicitados y los commits realizados en cada rama donde se realizaron los ejercicios uno y dos respectivamente.
+
+![](imagenesPullRequest/pulls.png)
+
+### Punto 1 Pull Request y Commits
+![](imagenesPullRequest/pullRequest1.png)
+
+### Punto 2 Pull Request y Commits
+![](imagenesPullRequest/pullRequest2.png)
