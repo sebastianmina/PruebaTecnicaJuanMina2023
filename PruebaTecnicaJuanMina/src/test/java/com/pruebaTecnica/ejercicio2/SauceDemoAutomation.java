@@ -3,9 +3,7 @@ package com.pruebaTecnica.ejercicio2;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.*;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import pageObjects.*;
@@ -15,10 +13,8 @@ public class SauceDemoAutomation {
 	private WebDriver driver;
 	
 	private LoginPage loginPage;
-	private MainPageSelectProduct mainPage;
-	private RemoveProduct removeProduct;
-	private AddProducts addProduct;
-	private CheckCart cartProduct;
+	private MainPage mainPage;
+
 	
 	@Before
 	/**
@@ -37,21 +33,9 @@ public class SauceDemoAutomation {
 		loginPage.setDriver(driver);
 		loginPage.getDriver().get(url);
 		
-		mainPage = new MainPageSelectProduct();
+		mainPage = new MainPage();
 		mainPage.setDriver(driver);
 		mainPage.getDriver().get(url);
-		
-		removeProduct = new RemoveProduct();
-		removeProduct.setDriver(driver);
-		removeProduct.getDriver().get(url);
-		
-		addProduct = new AddProducts();
-		addProduct.setDriver(driver);
-		addProduct.getDriver().get(url);
-		
-		cartProduct = new CheckCart();
-		cartProduct.setDriver(driver);
-		cartProduct.getDriver().get(url);
 			
 	}
 	
@@ -83,9 +67,9 @@ public class SauceDemoAutomation {
 		
 		Thread.sleep(2000);
 		logInWithStandardUser();
-		addProduct.clickProducts();
+		mainPage.clickProducts();
 		
-		assertEquals(Integer.parseInt(addProduct.numberOfProducts().getText()),3);
+		assertEquals(Integer.parseInt(mainPage.numberOfProducts().getText()),3);
 		Thread.sleep(2000);
 		
 		driver.quit();
@@ -99,14 +83,14 @@ public class SauceDemoAutomation {
 		logInWithStandardUser();
 		
 		Thread.sleep(2000);
-		removeProduct.clickAdd();
+		mainPage.clickAdd();
 		
 		Thread.sleep(2000);
-		if(removeProduct.numberOfProducts().isDisplayed()) {
-			removeProduct.removeProduct();
+		if(mainPage.numberOfProducts().isDisplayed()) {
+			mainPage.removeProduct();
 		}
 		
-		assertEquals(removeProduct.addCartFirstProduct().isDisplayed(), true);
+		assertEquals(mainPage.addFirst().isDisplayed(), true);
 		Thread.sleep(2000);
 		driver.quit();
 	
@@ -120,10 +104,10 @@ public class SauceDemoAutomation {
 		
 		
 		Thread.sleep(2000);
-		cartProduct.clickCart();
+		mainPage.clickCart();
 		
 		Thread.sleep(2000);
-		assertEquals(cartProduct.titleOK(), true);
+		assertEquals(mainPage.titleOK(), true);
 
 		
 		Thread.sleep(1000);
